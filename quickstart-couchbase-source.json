@@ -5,7 +5,7 @@
     "connector.class": "com.couchbase.connect.kafka.CouchbaseSourceConnector",
     "tasks.max": "2",
     "couchbase.topic": "test-willy",
-    "couchbase.seed.nodes": "127.0.0.1",
+    "couchbase.seed.nodes": "192.168.11.108",
     "couchbase.bootstrap.timeout": "10s",
     "couchbase.bucket": "willy",
     "couchbase.username": "admin",

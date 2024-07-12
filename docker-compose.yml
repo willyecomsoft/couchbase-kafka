@@ -48,7 +48,7 @@ services:
       CONNECT_PLUGIN_PATH: '/usr/share/java,/usr/share/confluent-hub-components'
     volumes:
       - connect_data:/kafka-connect
-      - ./kafka-connect-couchbase:/usr/share/java/kafka-connect-couchbase
+      - ./couchbase-kafka-connect-couchbase-4.2.2:/usr/share/java/kafka-connect-couchbase
 
   kafka-ui:
     container_name: kafka-ui
@@ -59,7 +59,6 @@ services:
       DYNAMIC_CONFIG_ENABLED: 'true'
     volumes:
       - ui_data:/etc/kafkaui
-    #  - ~/kui/config.yml:/etc/kafkaui/dynamic_config.yaml
 
 volumes:
   kafka_data:
